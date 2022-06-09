@@ -12,6 +12,9 @@ public class AddressBookDriver {
             switch(option)
             {
                 case 1:
+                    System.out.println("Enter the Address book name");
+                    String book = sc.next();
+                    AddressBook.addBook(book);
                     AddressBookService.addContacts();
                     break;
                 case 2:
